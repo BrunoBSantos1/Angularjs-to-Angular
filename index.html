@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="hello">
+<head>
+    
+    <title>Document</title>
+    <script src="angular.js"></script>
+    <script>
+        angular.module("hello", []);
+        angular.module("hello").controller("helloController", function ($scope) {
+            $scope.message = "Hello Word!";
+        })
+    </script>
+</head>
+<body>
+    <div ng-controller="helloController">
+        {{ message }}
+    </div>
+</body>
+</html>
